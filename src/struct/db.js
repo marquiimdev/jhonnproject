@@ -1,6 +1,8 @@
 async function connect(){
   const mysql = require("mysql2/promise");
-  const connection = await mysql.createConnection("mysql://root:@localhost:3306/discord_last");
+
+  // Use da seguinte maneira: mysql://usuario:senha@servidor:porta/banco
+  const connection = await mysql.createConnection("mysql://jhonn:jhonny@localhost:3306/jhonn");
 
   global.connection = connection;
   return connection;
