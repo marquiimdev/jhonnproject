@@ -1,9 +1,4 @@
 require('dotenv').config();
-
-const Discord = require("discord.js");
-const client = new Discord.Client();
-console.log(client.user);
-
 const { readdirSync } = require('fs');
 const { join } = require('path');
 const MusicClient = require('./struct/Client');
@@ -22,5 +17,4 @@ for (const file of eventFiles) {
 	}
 }
 
-client.login("NTM0NDYwNTM3Mzc1ODE3NzQ5.XDzpKQ.eMR4BY3Z3L-GlmrQIfkd3M4cNrs");
 bot.login(bot.config.token);
